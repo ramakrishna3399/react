@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { ScrollView, StyleSheet, View } from 'react-native'
-import { List, Text, Card, Avatar, TextInput } from 'react-native-paper'
+import { List, Text, Card, Avatar, TextInput,Button } from 'react-native-paper'
 
 export class Profile extends Component {
     render() {
@@ -27,24 +27,101 @@ export class Profile extends Component {
                             <List.Accordion id={1} style={styles.accordian}
                                 title="Personal Information"
                                 titleStyle={styles.accordianTitle}>
-                                <View>
-                                    <View>
+                                <View style={{paddingTop:20}}>
+                                    <View  style={styles.inputFields}>
                                     <Text style={styles.title}>
                                         Title
                                     </Text>
                                     <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
                                     </View>
-                                    <View>
+                                    <View  style={styles.inputFields}>
                                     <Text style={styles.title}>
-                                        Title
+                                    First Name
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    Last Name
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    Gender
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    Date of Birth
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    Email ID
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    House No & Name
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    Street Address / Locality
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    Land Mark
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    State
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    City
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    Pin Code
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    Contact Number
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    Languages Known
+                                    </Text>
+                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                    </View>
+                                    <View  style={styles.inputFields}>
+                                    <Text style={styles.title}>
+                                    Short Description
                                     </Text>
                                     <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
                                     </View>
                                     <View>
-                                    <Text style={styles.title}>
-                                        Title
-                                    </Text>
-                                    <TextInput mode='outlined' placeholder='Mr.' style={styles.input} />
+                                        <Button style={styles.btnProfile} color="#FFFFFF">
+                                            NEXT
+                                        </Button>
                                     </View>
                                     </View>
                             </List.Accordion>
@@ -90,5 +167,13 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 3,
     },
+    inputFields:{
+        marginBottom:20
+    },
+    btnProfile:{
+        backgroundColor:'#16656F',
+        fontSize:16,
+        marginBottom:20
+    }
 });
 export default Profile
